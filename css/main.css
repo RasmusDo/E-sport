@@ -1,0 +1,282 @@
+body {
+    font-family: "Hartwell Alt Bold";
+
+    overflow-x: hidden;
+}
+
+#navbarWrapper {
+    background-color: rgba(236, 17, 64, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+ul {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbarItem {
+    float: left;
+    margin-right: 2vw;
+    text-decoration: none;
+}
+
+.navbarItem a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.navbarItem :hover {
+    color: rgb(238, 34, 45);
+}
+
+#navbarLogo {
+    position: absolute;
+    width: 4%;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+
+    left: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#upperbackground {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 200vw;
+    z-index: -1;
+}
+
+.upperimage {
+    float: left;
+	width: 100vw;
+}
+
+#backgroundwrapper {
+    position: relative;
+    left: -8px;
+    top: -8px;
+    
+    height: 38vw;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -2;
+}
+
+#storeFocus {
+    position: absolute;
+    width: 16vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#storeRight {
+    opacity: 0.9;
+    position: absolute;
+    width: 13vw;
+    left: 66%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#storeLeft {
+    opacity: 0.9;
+    position: absolute;
+    width: 13vw;
+    right: 66%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#storeWrapper {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: inherit;
+    width: 50vw;
+    height: 40vh;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#freshMerch {
+    position: absolute;
+    bottom: -4vh;
+    font-size: 20px;
+    font-family: "Hartwell Alt Medium";
+    color: rgb(24, 24, 24);
+    left: 50%;
+    transform: translate(-50%);
+    font-style: italic;
+}
+
+.storeArrow {
+    user-select: none;
+    opacity: 0.3;
+    position: absolute;
+    font-size: 40px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+#storeArrowRight {
+    right: 0;
+}
+
+@keyframes image-move {
+    0%   { 
+        transform: translateX(0%); 		
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes image-move2 {
+    0%   { 
+        transform: translateX(100%); 		
+    }
+    100% { 
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes image-move3 {
+    0%   { 
+        transform: translateX(-100%); 		
+    }
+    100% { 
+        transform: translateX(-200%); 
+    }
+}
+
+#footer {
+    position: absolute;
+    background-color: rgb(212, 22, 22);
+    width: 100vw;
+    height: 32vh;
+
+    left: 0px;
+    top: 130vh;
+}
+
+#media {
+    position: absolute;
+    background-color: inherit;
+    width: 30%;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+}
+
+#media-list {
+    background-color: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#media-list li {
+    opacity: 0.7;
+    color: white;
+    font-size: 1.8em;
+    float: left;
+    margin-right: 1vw;
+}
+
+#partners {
+    position: absolute;
+    background-color: inherit;
+    width: 50vw;
+    height: 22vh;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+}
+
+#partners h1{
+    color: white;
+    position: absolute;
+    font-family: "Hartwell Alt Bold";
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-style: italic;
+}
+
+#partners-container{
+    position: absolute;
+    background-color: inherit;
+    width: 80%;
+    height: 70%;
+
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+}
+
+#partners-container img {
+    opacity: 0.8;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+    filter: grayscale(100%);
+}
+
+#legal{
+    color: white;
+    margin: 0;
+    font-family: "Hartwell Alt Light";
+    position: absolute;
+    background-color: inherit;
+    width: 56vw;
+
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%,-100%);
+}
+
+#legal p {
+    float: left;
+    margin: 0;
+    width: 31vw;
+}
+
+#legal div {
+    margin-left: 1vw;
+    float: left;
+    width: 40%;
+}
