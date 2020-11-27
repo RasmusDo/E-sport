@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="hartwell/style.css">
+    <link rel="stylesheet" href="css/shop.css"
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+
+    <link rel="icon" href="imgs/HS_logo_2.png">
+    <title>Shop!</title>
+</head>
+<body>
+
+    <!-- LOGO and nav bar-->
+    <div id="navbarWrapper">
+      <a href="index.html">
+        <img id="navbarLogo" src="imgs/HS_logo_2.png">
+      </a>
+        <ul>
+            <li class="navbarItem"><a href="index.html">Home</a></li>
+            <li class="navbarItem"><a href="teams.html">Teams</a></li>
+            <li class="navbarItem"><a href="shop.html">Shop</a></li>
+            <li class="navbarItem"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="card">
+        
+      <div class="card_part card_part-one">
+      </div>
+      
+      <!-- Photo 2 -->
+      <div class="card_part card_part-two">
+  
+      </div>
+      
+        <!-- Photo 3 -->
+      <div class="card_part card_part-three">
+  
+      </div>
+
+      <div class="card_part card_part-four">
+  
+      </div>
+      
+      
+
+
+
+  </div>
+    <div class="card2">
+        <div class="top-section">
+          <img id="image-container" src="https://cdn.discordapp.com/attachments/705097216574095541/781157622182576178/redtshirt.png" alt="">
+          <div class="nav">
+            <img onclick="change_img(this)" src="https://cdn.discordapp.com/attachments/705097216574095541/781157622182576178/redtshirt.png" alt="">
+            <img onclick="change_img(this)" src="https://cdn.discordapp.com/attachments/705097216574095541/781157619863257158/darkgraytshirt.png" alt="">
+            <img onclick="change_img(this)" src="https://cdn.discordapp.com/attachments/705097216574095541/781157617966776330/browntshirt.png" alt="">
+          </div>
+          <div class="price">£29</div>
+        </div>
+      
+        <div class="product-info">
+          <div class="name">T-shirt</div>
+          <div class="dis">Awesome T-shirt HS</div>
+          <a class="btn" href="#">Add to Cart</a>
+        </div>
+      
+      </div>
+        <script type="text/javascript">
+          var container = document.getElementById("image-container");
+          function change_img(image) {
+            container.src = image.src;
+          }
+        </script>
+    </div>
+
+
+    <div id="footer">
+        <div id="partners">
+            <h1>PARTNERS</h1>
+            <div id="partners-container">
+                <img src="imgs/partner banner.png" alt="">
+            </div>
+        </div>
+        <div id="media">
+            <ul id="media-list">
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-reddit"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitch"></i></li>
+                <li><i class="fab fa-discord"></i></li>
+            </ul>
+        </div>
+        <div id="legal">
+            <p>COPYRIGHT @ 2020 HS Esports Co. ALL RIGHTS RESERVED</p>
+            <div>
+                <a>Legal Terms |</a>
+                <a>Privacy Policy |</a>
+                <a>Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

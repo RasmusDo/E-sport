@@ -1,19 +1,103 @@
+
+/*^HERO slider^*/
+.card {
+  position: absolute;
+  top:10vh;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  border-bottom: 3px;
+  border-color: black;
+  align-content: center;
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card_part {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateX( 100% );
+  background-image: url( https://cdn.discordapp.com/attachments/705097216574095541/781157619863257158/darkgraytshirt.png );
+  background-repeat: no-repeat;
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  top:0px;
+}
+
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( https://cdn.discordapp.com/attachments/705097216574095541/781157622182576178/redtshirt.png );
+  animation-delay: 7s;
+  background-repeat: no-repeat;
+
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url( https://cdn.discordapp.com/attachments/705097216574095541/781157617966776330/browntshirt.png );
+  animation-delay: 14s;
+  background-repeat: no-repeat;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url( https://pbs.twimg.com/media/EWQxfFfXQAA_COK.jpg );
+  animation-delay: 21s;
+  background-repeat: no-repeat;
+}
+
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 34% ); }
+  25% { transform: translateX( 30% ); }
+  28% { transform: translateX( -100% ); }
+  100% { transform: translateX( -100% ); }
+}
+
+/*^slider stuff end^*/
+
+
+
+
 *{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body{
   background: #211e25;
     margin: 0;
   padding: 0;
 }
-.card{
+.card2{
   width: 300px;
   background: #f1f1f1;
   position: absolute;
-  top: 60%;
+  top: 135vh;
   left: 20%;
   transform: translate(-50%,-50%);
+  border-radius: 5px;
 }
 .top-section{
   height: 310px;
@@ -71,6 +155,7 @@ body{
 .btn:hover{
   background: #333;
 }
+
 #footer {
   position: absolute;
   background-color: rgb(212, 22, 22);
@@ -78,7 +163,7 @@ body{
   height: 32vh;
 
   left: 0px;
-  top: 130vh;
+  top: 180vh;
 }
 
 #media {
@@ -135,6 +220,7 @@ body{
   padding: 0;
   width: auto;
   font-style: italic;
+  z-index: 1;
 }
 
 #partners-container{

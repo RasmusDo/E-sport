@@ -1,0 +1,57 @@
+body {
+    font-family: "Hartwell Alt Bold";
+}
+
+#navbarWrapper {
+    background-color: rgb(240, 38, 48);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(216, 31, 41);
+}
+
+ul {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbarItem {
+    float: left;
+    margin-right: 2vw;
+    text-decoration: none;
+}
+
+.navbarItem :hover {
+    text-decoration: underline;
+}
+
+.navbarItem a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+#navbarLogo {
+    position: absolute;
+    width: 4%;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+
+    left: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+}

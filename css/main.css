@@ -234,6 +234,7 @@ ul {
     padding: 0;
     width: auto;
     font-style: italic;
+    z-index: 1;
 }
 
 #partners-container{

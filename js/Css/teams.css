@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura&display=swap');
+
+.banner {
+    position: relative;
+    text-align: center;
+    top: 10vh; 
+}
+.banner-img {
+    width: 100%; height:auto;
+    opacity: 0.5;
+    filter: grayscale(100);
+
+}
+.img-text {
+    position: absolute;
+    top: 2vh;
+    left: 1vh;
+    font-size: 5vw;
+    font-family: "Hartwell Alt Black";
+}
+.banner-text {
+    position: absolute;
+    top: 15vh;
+    left: 1vh;
+    font-size: 1vw;
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: 100;
+}
+.container-text {
+    position: relative;
+
+}
+.test{
+    position: relative;
+    top: 10vh;
+    display: inline-block;
+}
+
+div.gallery {
+    position: relative;
+    top: 15vh;
+    float: left;
+    width: 33.33%;
+}
+
+div.gallery2 {
+    /**/
+
+}
+
+
+div.gallery img {
+    width: 99%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    transition:.2s all;
+}
+
+.gallery2:hover .img-bruh{
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+  .gallery2:hover .img-bruh:hover{
+    transform:scale(1.2);
+    filter:blur(0px) grayscale(0);
+    opacity:1;
+  }
+
+
+.top{
+    position: absolute;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.text-box{
+    position: relative;
+    margin:auto;
+    top:95vh; 
+    width: 85%; 
+    height: 20vh; 
+    background-color: white;
+    border-top: 2px solid black;
+    border-top-width:80%;
+    border-bottom: 2px solid black;
+}
+#text-box {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    top:1px;
+}
+.small-box1 h1{
+    font-size: 2vw;
+    position: absolute;
+    font-family: "Hartwell Alt Medium";
+}
+.small-box1{
+    position: absolute;
+    left: 1vw;
+    top:2.2vh;
+    text-align: left;
+    margin: auto;
+    width: 20vw;
+}
+.small-box2{
+    position: absolute;
+    right: 25vw;
+    top:2vw;
+    text-align: left;
+    margin: auto;
+    width: 30vw;
+}
+.small-box2 h2{
+    font-size: 1.5vw;
+    position: relative;
+    font-family: "Hartwell Alt Ultralight";
+}
+.small-box3{
+    position: absolute;
+    right: 2vw;
+    top:3vw;
+}
+
+/*saker till small box3*/
+.example_c {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 1.5vw;
+    border: 0.2vw solid #3b3a3a !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+    .example_c:hover {
+        color: #ffffff !important;
+        background: rgb(216, 31, 41);
+        border-color: rgb(216, 31, 41) !important;
+        transition: all 0.4s ease 0s;
+        }
+
+#footer {
+    position: absolute;
+    background-color: rgb(212, 22, 22);
+    width: 100vw;
+    height: 32vh;
+
+    left: 0px;
+    top: 170vh;
+}
+
+#media {
+    position: absolute;
+    background-color: inherit;
+    width: 30%;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+}
+
+#media-list {
+    background-color: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#media-list li {
+    opacity: 0.7;
+    color: white;
+    font-size: 1.8em;
+    float: left;
+    margin-right: 1vw;
+}
+
+#partners {
+    position: absolute;
+    background-color: inherit;
+    width: 50vw;
+    height: 22vh;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+}
+
+#partners h1{
+    color: white;
+    position: absolute;
+    font-family: "Hartwell Alt Bold";
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-style: italic;
+}
+
+#partners-container{
+    position: absolute;
+    background-color: inherit;
+    width: 80%;
+    height: 60%;
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+}
+
+#partners-container img {
+    opacity: 0.8;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+    height: 100%;
+    filter: grayscale(100%);
+    z-index: 100;
+
+}
+
+#legal{
+    color: white;
+    margin: 0;
+    font-family: "Hartwell Alt Light";
+    position: absolute;
+    background-color: inherit;
+    width: 56vw;
+
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%,-100%);
+}
+
+#legal p {
+    float: left;
+    margin: 0;
+    width: 31vw;
+}
+
+#legal div {
+    margin-left: 1vw;
+    float: left;
+    width: 40%;
+}
